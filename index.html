@@ -19,23 +19,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- javaScript -->
     <script src="./js/main.js" defer></script>
     <!-- defer은 html을 먼저 해석한 뒤 스크립트를 실행하게 함 -->
-     <style type="text/css">
-        body {
-                font-family: 'Noto Sans KR', sans-serif;
-                /* font-family: 'Roboto', sans-serif; */
-            }
-     </style>
 
 </head>
 <body>
-    포트폴리오 시작
-    Hello, world!
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header_logo"> 
+            <img class="header_logo_img" src="./img/img_01_crop.ico" alt="logo" width="34">
+            <h1 class="header_logo_title">
+                <a href="#"> Youra </a>
+            </h1>
+        </div>
+        <nav class="header_nav">
+            <ul class="header_menu">
+                <li><a class="header_menu_item active" href="#home"> Home </a></li>
+                <li><a class="header_menu_item" href="#about"> About </a></li>
+                <li><a class="header_menu_item" href="#skills"> Skills </a></li>
+                <li><a class="header_menu_item" href="#work"> My Work </a></li>
+                <li><a class="header_menu_item" href="#testimonial"> Testimonial </a></li>
+                <li><a class="header_menu_item" href="#contact"> Contact </a></li>
+            </ul>
+        </nav>
+        <!-- 햄버거 버튼 - PC화면에서는 none, Mobile화면에서는 block 지정 -->
+        <div class="hamburger">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- home -->
+        <section>
+            로고 + nav 메뉴
+        </section>
+
+        <!-- About -->
+        <section>
+            본인 소개
+        </section>
+
+        <!-- Skill -->
+        <section>
+            본인 스킬 소개
+        </section>
+
+        <!-- Work -->
+        <section>
+            이전에 제작했던 콘텐츠 소개
+        </section>
+
+        <!-- Testimonials -->
+        <section>
+            주변 지인의 추천글
+        </section>
+
+        <!-- Top btn -->
+        <aside>
+            Top btn
+        </aside>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        footer
+    </footer>
+
 </body>
 </html>
