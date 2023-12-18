@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/testimonial.css">
 
     <!-- javaScript -->
     <script src="./js/main.js" defer></script>
@@ -214,81 +215,81 @@
             </p>
 
             <ul class="category">
-                <li><button class="category_button"> All  <span class="work_count"> 8 </span>  </button></li>
+                <li><button class="category_button category_selected"> All  <span class="work_count"> 8 </span>  </button></li>
                 <li><button class="category_button"> Front-end  <span class="work_count"> 3 </span> </button></li>
                 <li><button class="category_button"> Design <span class="work_count"> 3 </span> </button></li>
                 <li><button class="category_button"> Mobile <span class="work_count"> 2 </span> </button></li>
             </ul>
-            <ul>
-                <li>
+            <ul class="project_all">
+                <li class="project">
                     <a href="#" target="_blank">
                         <img src="img/project_01.png" alt="project_01 이미지">
-                        <div>
-                            <h3> Project #1 </h3>
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #1 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
                 </li>
 
-                <li>
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_02.png" alt="project_02 이미지">
-                        <div>
-                            <h3> Project #2 </h3>
+                        <img class="project_img" src="img/project_02.png" alt="project_02 이미지">
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #2 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_03.png" alt="project_03 이미지">
-                        <div>
-                            <h3> Project #3 </h3>
+                        <img class="project_img" src="img/project_03.png" alt="project_03 이미지">
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #3 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_04.png" alt="project_04 이미지">
-                        <div>
-                            <h3> Project #4 </h3>
+                        <img class="project_img" src="img/project_04.png" alt="project_04 이미지">
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #4 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_05.png" alt="project_05 이미지">
-                        <div>
-                            <h3> Project #5 </h3>
+                        <img class="project_img" src="img/project_05.png" alt="project_05 이미지">
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #5 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_06.png" alt="project_06 이미지">
-                        <div>
-                            <h3> Project #6 </h3>
+                        <img class="project_img" src="img/project_06.png" alt="project_06 이미지">
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #6 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_07.png" alt="project_07 이미지">
-                        <div>
-                            <h3> Project #7 </h3>
+                        <img class="project_img" src="img/project_07.png" alt="project_07 이미지">
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #7 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_08.png" alt="project_08 이미지">
-                        <div>
-                            <h3> Project #8 </h3>
+                        <img class="project_img" src="img/project_08.png" alt="project_08 이미지">
+                        <div class="project_text">
+                            <h3 class="project_title"> Project #8 </h3>
                             <p> My Work </p>
                         </div>
                     </a>
@@ -299,15 +300,55 @@
 
         <!-- Testimonials -->
         <section id="testimonial" class="section_style">
-            <h2> Testimonial </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Aliquam eius commodi 
-                magni nisi, tempora repellendus explicabo 
-                libero iste inventore, distinctio at quis, 
-                modi saepe temporibus? Nesciunt omnis alias 
-                velit ratione.
+            <h2 calss="title"> Testimonial </h2>
+            <p class="description">
+                See What they say about me
             </p>
+            <ul class="testimonial_all">
+                <li class="testimonial_each">
+                    <img class="testimonial_img" src="img/people_01.jpg" width="150" alt="people_01">
+                    <div class="testimonial_bubble">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus amet necessitatibus perspiciatis fugit ipsum molestias, consequuntur voluptatibus reprehenderit, similique dolores illum hic in nam, quam recusandae quidem! Impedit, sapiente ipsum!
+                        </p>
+                        <p>
+                            <a href="" class="testimonial_bubble_name">
+                                James Kim
+                            </a>
+                            /Company_01
+                        </p>
+                    </div>
+                </li>
+                <li class="testimonial_each">
+                    <img class="testimonial_img" src="img/people_02.jpg" width="150" alt="people_02">
+                    <div class="testimonial_bubble">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus amet necessitatibus perspiciatis fugit ipsum molestias, consequuntur voluptatibus reprehenderit, similique dolores illum hic in nam, quam recusandae quidem! Impedit, sapiente ipsum!
+                        </p>
+                        <p>
+                            <a href="" class="testimonial_bubble_name">
+                                Smith Well
+                            </a>
+                            /Company_02
+                        </p>
+                    </div>
+                </li>
+                <li class="testimonial_each">
+                    <img class="testimonial_img" src="img/people_03.jpg" width="150" alt="people_01">
+                    <div class="testimonial_bubble">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus amet necessitatibus perspiciatis fugit ipsum molestias, consequuntur voluptatibus reprehenderit, similique dolores illum hic in nam, quam recusandae quidem! Impedit, sapiente ipsum!
+                        </p>
+                        <p>
+                            <a href="" class="testimonial_bubble_name">
+                                Envi Holoy
+                            </a>
+                            /Company_03
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
         </section>
 
         <!-- Top btn -->
