@@ -1,0 +1,106 @@
+/* 가로 768px 이하 */
+@media (width < 768px) {
+ .section {
+    padding: 3rem 2rem;
+ }   
+ .title {
+    font-size: 2rem;
+ }
+ .description {
+    font-size: 1rem;
+ }
+ .home {
+    padding: 3rem;
+ }
+ .home_title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+ }
+
+/* Header */
+.header {
+    flex-flow: column;
+    align-items: start;
+    background-color: var(--color-primary);
+}
+    .header_nav { /*반응형에서만 크기로 사용*/
+        width: 100%;
+    }
+
+        .header_menu {
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem 4rem;
+            gap: 1rem;
+        }
+        .header_menu.open {  /*javascript 용*/
+            display: flex;
+        }
+        .header_menu_item {
+            display: inline-block;
+        }
+        .hamburger {
+            display: block;
+            color: var(--color-white);
+            font-size: 1.5rem;
+            position: absolute;
+            top: 1.4rem;
+            right: 1rem;
+            border: 0;
+        }
+    /* About */
+    .about_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_box {
+        width: 100%;
+    }
+    /* Skills */
+    .skills_content {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        margin: 2rem auto;
+        grid-template-areas:
+        "a"
+        "b"
+        "c";
+    }
+
+    /* My Work */
+    .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        .category_button {
+            width: 100%;
+        }
+
+        .project_all {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+    /* Testimonial */
+    .testimonial_each {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .testimonial_each:nth-child(even) .testimonial_img {
+        order: 0;
+    }
+
+    /* Top btn */
+    .arrow_up {
+        right: 1rem;
+        bottom: 1rem;
+        transform: scale(0.8);
+    }
+
+}

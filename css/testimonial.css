@@ -8,7 +8,7 @@
         align-items: center;
         margin-bottom: 2rem;
     }
-
+    /* even은 짝수번째, odd는 홀수번째 요소 변경 */
     .testimonial_each:nth-child(even) .testimonial_img {
         order: 1; /* oder: 0; 이면 왼쪽, 1이면 오른쪽*/
     }
