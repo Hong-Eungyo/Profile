@@ -29,16 +29,14 @@
 
         .header_menu {
             flex-direction: column;
-            text-align: center;
+            align-items: center;
             padding: 1rem 4rem;
             gap: 1rem;
         }
         .header_menu.open {  /*javascript 용*/
             display: flex;
         }
-        .header_menu_item {
-            display: inline-block;
-        }
+
         .hamburger {
             display: block;
             color: var(--color-white);
