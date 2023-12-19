@@ -1,18 +1,18 @@
 /* 가로 768px 이하 */
 @media (width < 768px) {
- .section {
+ .section_style {
     padding: 3rem 2rem;
  }   
- .title {
+ .section_title {
     font-size: 2rem;
  }
- .description {
+ .section_description {
     font-size: 1rem;
  }
- .home {
+ #home {
     padding: 3rem;
  }
- .home_title {
+ .section_title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
  }
