@@ -19,22 +19,38 @@
 
 /* Header */
 .header {
-    flex-flow: column;
-    align-items: start;
+    width: 100%;
     background-color: var(--color-primary);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
 }
     .header_nav { /*반응형에서만 크기로 사용*/
         width: 100%;
     }
 
         .header_menu {
-            flex-direction: column;
-            align-items: center;
+            display: none;
+            flex-flow: column nowrap;
+            width: 100%;
+            
+            text-align: center;
             padding: 1rem 4rem;
             gap: 1rem;
         }
         .header_menu.open {  /*javascript 용*/
             display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem 4rem;
+            gap: 1rem;
         }
 
         .hamburger {
@@ -48,7 +64,9 @@
         }
     /* About */
     .about_content {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     .about_box {
