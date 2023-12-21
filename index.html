@@ -35,14 +35,19 @@
     <link rel="stylesheet" href="css/media_768.css">
 
     <!-- javaScript -->
-    <script src="./js/main.js" defer></script>
-    <!-- defer은 html을 먼저 해석한 뒤 스크립트를 실행하게 함 -->
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/main_01.js" defer></script>
+    <script type="module" src="js/main_02.js" defer></script>
+    <script type="module" src="js/test_01.js" defer></script>
+    
+    <!-- 
+    type="module"은 사용하면 변수 이름이 동일할 때 오류가 되도록 변수 오류 방지용
+    defer은 html을 먼저 해석한 뒤 스크립트를 실행하게 함 -->
 
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-
         <div class="header_logo"> 
             <img class="header_logo_img" src="img/img_01_crop.ico" alt="logo" width="34">
             <h1 class="header_logo_title">
@@ -226,7 +231,7 @@
             <ul class="project_all">
                 <li class="project">
                     <a href="#" target="_blank">
-                        <img src="img/project_01.png" alt="project_01 이미지">
+                        <img class="project_img" src="img/project_01.png" alt="project_01 이미지">
                         <div class="project_text">
                             <h3 class="project_title"> Project #1 </h3>
                             <p> My Work </p>

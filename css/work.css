@@ -49,9 +49,10 @@
 
 .project_all {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
+
 }
 
     .project {
@@ -61,7 +62,7 @@
     }
 
     .project_img {
-        height: 100%;
+        width: 100%;
     }
 
     .project_text {
