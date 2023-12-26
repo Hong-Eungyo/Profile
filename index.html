@@ -37,7 +37,10 @@
     <!-- javaScript -->
     <script type="module" src="js/main.js" defer></script>
     <script type="module" src="js/main_01.js" defer></script>
-    <!-- <script type="module" src="js/main_02.js" defer></script> -->
+    <script type="module" src="js/main_02.js" defer></script>
+    <script type="module" src="js/main_03.js" defer></script>
+    <script type="module" src="js/main_04.js" defer></script>
+    <script type="module" src="js/main_05.js" defer></script>
     <script type="module" src="js/test_01.js" defer></script>
     
     <!-- 
@@ -158,7 +161,7 @@
                                 <span> 98% </span>
                             </div>
                             <div class="bar_bg">
-                                <div class="bar_value" style="width: 98%">&nbsp;</div>
+                                <div class="bar_value" data-width="98" style="width: 98">&nbsp;</div>
                             </div>
                         </li>
                         <li class="skills_bar"> 
@@ -167,7 +170,7 @@
                                 <span> 90% </span>
                             </div>
                             <div class="bar_bg">
-                                <div class="bar_value" style="width: 90%">&nbsp;</div>
+                                <div class="bar_value" data-width="90" style="width: 90%">&nbsp;</div>
                             </div>
                         </li>
                         <li class="skills_bar"> 
@@ -176,7 +179,7 @@
                                 <span> 80% </span>
                             </div>
                             <div class="bar_bg">
-                                <div class="bar_value" style="width: 80%">&nbsp;</div>
+                                <div class="bar_value" data-width="80" style="width: 80%">&nbsp;</div>
                             </div>
                         </li>
                         <li class="skills_bar"> 
@@ -185,7 +188,7 @@
                                 <span> 76% </span>
                             </div>
                             <div class="bar_bg">
-                                <div class="bar_value" style="width: 76%">&nbsp;</div>
+                                <div class="bar_value" data-width="76" style="width: 76%">&nbsp;</div>
                             </div>
                         </li>
                     </ul>
@@ -223,13 +226,13 @@
             </p>
 
             <ul class="category">
-                <li><button class="category_button category_selected"> All  <span class="work_count"> 8 </span>  </button></li>
-                <li><button class="category_button"> Front-end  <span class="work_count"> 3 </span> </button></li>
-                <li><button class="category_button"> Design <span class="work_count"> 3 </span> </button></li>
-                <li><button class="category_button"> Mobile <span class="work_count"> 2 </span> </button></li>
+                <li><button class="category_button category_selected" data-category="all"> All  <span class="work_count"> 8 </span>  </button></li>
+                <li><button class="category_button" data-category="front-end"> Front-end  <span class="work_count"> 3 </span> </button></li>
+                <li><button class="category_button" data-category="design"> Design <span class="work_count"> 3 </span> </button></li>
+                <li><button class="category_button" data-category="mobile"> Mobile <span class="work_count"> 2 </span> </button></li>
             </ul>
             <ul class="project_all">
-                <li class="project">
+                <li class="project" data-type="front-end">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_01.png" alt="project_01 이미지">
                         <div class="project_text">
@@ -239,7 +242,7 @@
                     </a>
                 </li>
 
-                <li class="project">
+                <li class="project" data-type="front-end">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_02.png" alt="project_02 이미지">
                         <div class="project_text">
@@ -248,7 +251,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="front-end">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_03.png" alt="project_03 이미지">
                         <div class="project_text">
@@ -257,7 +260,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="design">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_04.png" alt="project_04 이미지">
                         <div class="project_text">
@@ -266,7 +269,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="mobile">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_05.png" alt="project_05 이미지">
                         <div class="project_text">
@@ -275,7 +278,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="design">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_06.png" alt="project_06 이미지">
                         <div class="project_text">
@@ -284,7 +287,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="design">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_07.png" alt="project_07 이미지">
                         <div class="project_text">
@@ -293,7 +296,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="mobile">
                     <a href="#" target="_blank">
                         <img class="project_img" src="img/project_08.png" alt="project_08 이미지">
                         <div class="project_text">

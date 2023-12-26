@@ -1,15 +1,11 @@
 // 변수 선언
 const about_section = document.querySelector('#about');
-const about_title = about_section.querySelector('.section_title');
-const line = about_title.getBoundingClientRect().bottom;
+const line = about_section.offsetHeight;
 const about_box = document.querySelector('.about_content');
 
 
-
-
-document.addEventListener('scroll', () => {
-    // console.log(window.scrollY);    
-    if (window.scrollY > line) {
+document.addEventListener('scroll', () => { 
+    if (window.scrollY > line / 2) {
         about_box.classList.add('display');
     } else {
         about_box.classList.remove('display');
@@ -31,5 +27,24 @@ for (const img of imgs) {
         }
     })
 }
+
+const bars = document.querySelectorAll('.bar_value');
+const skills = document.querySelector('#skills');
+const skillsHeight = skills.offsetTop;
+
+
+document.addEventListener('scroll', ()=> {
+ if (window.scrollY >  skillsHeight) {
+    bars.item(0).style.width ='98%';
+    bars.item(1).style.width ='90%';
+    bars.item(2).style.width = '80%';
+    bars.item(3).style.width = '76%';
+ } else {
+    bars.item(0).style.width = 0;
+    bars.item(1).style.width = 0;
+    bars.item(2).style.width = 0;
+    bars.item(3).style.width = 0;
+ }
+});
 
 
