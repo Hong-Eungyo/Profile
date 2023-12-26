@@ -41,6 +41,9 @@ categories.forEach((category)=> {
             } else {
                 project.style.display = "none";
             }
+            if(filter == null) {
+                return;
+            }
         })
         // 클릭한 요소에 selected class주기
         const active_btn = document.querySelector('.category_selected');
