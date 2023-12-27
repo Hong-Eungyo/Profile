@@ -6,7 +6,32 @@
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+    position: relative;
 }
+/*물결 모양 시작*/
+.custom-shape-divider-bottom-1703646558 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703646558 svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 122px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1703646558 .shape-fill {
+    fill: #FFFFFF;
+}
+/* 물결 모양 끝 */
+
     .home_avatar {
         width: 250px;
         height: 250px;

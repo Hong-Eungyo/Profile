@@ -38,6 +38,7 @@ categories.forEach((category)=> {
         projects.forEach((project)=> {
             if(filter === 'all' || filter === project.dataset.type){
                 project.style.display = "block";
+               
             } else {
                 project.style.display = "none";
             }

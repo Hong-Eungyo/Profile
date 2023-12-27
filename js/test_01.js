@@ -47,4 +47,13 @@ document.addEventListener('scroll', ()=> {
  }
 });
 
+// 헤더 메뉴에 클릭 시 이벤트
+const menus = document.querySelectorAll('.header_menu_item');
 
+menus.forEach((menu)=> {
+    menu.addEventListener('click', (e)=>{
+        const selectedBtn = document.querySelector('.active');
+        selectedBtn.classList.remove('active');
+        e.target.classList.add('active');
+    })
+})
